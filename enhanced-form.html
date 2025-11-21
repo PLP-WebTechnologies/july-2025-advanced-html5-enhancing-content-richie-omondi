@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Enhanced multi-section webpage demonstrating lists, tables, media, and a complete HTML5 form." />
+    <title>Enhanced HTML5 Form Page</title>
+</head>
+<body>
+    <header>
+        <h1>Enhanced Multi‑Section Web Page</h1>
+        <p>A demonstration of HTML5 lists, tables, media, and form validation.</p>
+    </header>
+
+    <main>
+        <!-- SECTION: LISTS -->
+        <section>
+            <h2>Our Features</h2>
+            <p>Below is a list of our platform's core strengths:</p>
+            <ul>
+                <li>Accessible and semantic structure</li>
+                <li>Clean and maintainable HTML</li>
+                <li>Native HTML5 validation</li>
+                <li>Modern layout using HTML elements</li>
+            </ul>
+
+            <h3>How It Works</h3>
+            <ol>
+                <li>Explore the website sections.</li>
+                <li>Fill in the enhanced HTML form.</li>
+                <li>Submit the form to see validation in action.</li>
+            </ol>
+        </section>
+
+        <!-- SECTION: TABLE -->
+        <section>
+            <h2>Pricing Table</h2>
+            <table border="1" aria-label="Pricing Table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Features</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic</td>
+                        <td>Standard Support</td>
+                        <td>$10/mo</td>
+                    </tr>
+                    <tr>
+                        <td>Pro</td>
+                        <td>Premium Support + Tools</td>
+                        <td>$25/mo</td>
+                    </tr>
+                    <tr>
+                        <td>Enterprise</td>
+                        <td>All Features + Dedicated Rep</td>
+                        <td>$50/mo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECTION: MEDIA -->
+        <section>
+            <h2>Media Showcase</h2>
+            <figure>
+                <img src="https://via.placeholder.com/600x300" alt="Sample placeholder image" />
+                <figcaption>A responsive placeholder image displayed for demo purposes.</figcaption>
+            </figure>
+
+            <figure>
+                <audio controls>
+                    <source src="sample-audio.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>Sample audio clip (placeholder).</figcaption>
+            </figure>
+        </section>
+
+        <!-- SECTION: FORM -->
+        <section>
+            <h2>Contact & Registration Form</h2>
+            <form action="#" method="post" autocomplete="on">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name" />
+                    <br /><br />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+                    <br /><br />
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10‑digit number" required />
+                    <br /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required minlength="4" />
+                    <br /><br />
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6" />
+                    <br /><br />
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="18" max="100" required />
+                    <br /><br />
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">-- Select Country --</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="usa">United States</option>
+                        <option value="uk">United Kingdom</option>
+                    </select>
+                    <br /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <p>Preferred Contact Method:</p>
+                    <label><input type="radio" name="contactmethod" value="email" required /> Email</label>
+                    <label><input type="radio" name="contactmethod" value="phone" /> Phone</label>
+                    <br /><br />
+
+                    <p>Select Interests:</p>
+                    <label><input type="checkbox" name="interests" value="design" /> Web Design</label>
+                    <label><input type="checkbox" name="interests" value="coding" /> Coding</label>
+                    <label><input type="checkbox" name="interests" value="media" /> Media</label>
+                    <br /><br />
+
+                    <label for="bio">Short Bio:</label><br />
+                    <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..."></textarea>
+                    <br /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmation</legend>
+
+                    <label for="refcode">Referral Code (readonly):</label>
+                    <input type="text" id="refcode" name="refcode" value="WELCOME2025" readonly />
+                    <br /><br />
+
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required />
+                        I agree to the terms and conditions.
+                    </label>
+                </fieldset>
+
+                <br />
+                <button type="submit">Submit Form</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Enhanced HTML5 Example</p>
+    </footer>
+</body>
+</html>
